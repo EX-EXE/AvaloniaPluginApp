@@ -1,0 +1,37 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:AvaloniaPluginApp.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="AvaloniaPluginApp.Views.MainView"
+             x:DataType="vm:MainViewModel">
+	<Design.DataContext>
+		<!-- This only sets the DataContext for the previewer in an IDE,
+         to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+		<vm:MainViewModel />
+	</Design.DataContext>
+
+	<DockPanel>
+		<ListBox Name="pluginListBox" DockPanel.Dock="Left"  ItemsSource="{Binding PluginService.Plugins}" SelectedItem="{Binding SelectedPlugin}">
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<Grid>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition>*</ColumnDefinition>
+							<ColumnDefinition>125</ColumnDefinition>
+						</Grid.ColumnDefinitions>
+						<TextBlock Grid.Column="0" Text="{Binding Name}" VerticalAlignment="Center"></TextBlock>
+						<Button 
+							Grid.Column="1" 
+							Command="{ReflectionBinding DataContext.RunCommand,RelativeSource={RelativeSource FindAncestor,AncestorType=UserControl}}" 
+							CommandParameter="{Binding}" >Load/Unload</Button>
+					</Grid>
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+		</ListBox>
+		<ContentPresenter DockPanel.Dock="Top" Content="{Binding Control}" ></ContentPresenter>
+		<Button DockPanel.Dock="Bottom" VerticalAlignment="Bottom">Test</Button>
+	</DockPanel>
+
+</UserControl>

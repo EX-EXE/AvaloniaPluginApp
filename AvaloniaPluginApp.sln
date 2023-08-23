@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34009.444
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8845E834-77AF-4571-8CB2-346CE0DB1588}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvaloniaPluginApp", "src\AvaloniaPluginApp\AvaloniaPluginApp.csproj", "{D157C997-3A12-4D16-B170-3075A30FFAEE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvaloniaPluginApp.Desktop", "src\AvaloniaPluginApp.Desktop\AvaloniaPluginApp.Desktop.csproj", "{F2CC4500-63F1-4D74-9828-BDBDEAAD2581}"
+	ProjectSection(ProjectDependencies) = postProject
+		{081D0F28-36A0-4A39-9371-9ADBC2823BDE} = {081D0F28-36A0-4A39-9371-9ADBC2823BDE}
+		{519EDA9F-EB0D-411F-A8D6-8D461903407E} = {519EDA9F-EB0D-411F-A8D6-8D461903407E}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvaloniaPluginBase", "src\AvaloniaPluginBase\AvaloniaPluginBase.csproj", "{081D0F28-36A0-4A39-9371-9ADBC2823BDE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvaloniaPluginSample", "src\AvaloniaPluginSample\AvaloniaPluginSample.csproj", "{519EDA9F-EB0D-411F-A8D6-8D461903407E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D157C997-3A12-4D16-B170-3075A30FFAEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D157C997-3A12-4D16-B170-3075A30FFAEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D157C997-3A12-4D16-B170-3075A30FFAEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D157C997-3A12-4D16-B170-3075A30FFAEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2CC4500-63F1-4D74-9828-BDBDEAAD2581}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2CC4500-63F1-4D74-9828-BDBDEAAD2581}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2CC4500-63F1-4D74-9828-BDBDEAAD2581}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2CC4500-63F1-4D74-9828-BDBDEAAD2581}.Release|Any CPU.Build.0 = Release|Any CPU
+		{081D0F28-36A0-4A39-9371-9ADBC2823BDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{081D0F28-36A0-4A39-9371-9ADBC2823BDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{081D0F28-36A0-4A39-9371-9ADBC2823BDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{081D0F28-36A0-4A39-9371-9ADBC2823BDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{519EDA9F-EB0D-411F-A8D6-8D461903407E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{519EDA9F-EB0D-411F-A8D6-8D461903407E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{519EDA9F-EB0D-411F-A8D6-8D461903407E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{519EDA9F-EB0D-411F-A8D6-8D461903407E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D157C997-3A12-4D16-B170-3075A30FFAEE} = {8845E834-77AF-4571-8CB2-346CE0DB1588}
+		{F2CC4500-63F1-4D74-9828-BDBDEAAD2581} = {8845E834-77AF-4571-8CB2-346CE0DB1588}
+		{081D0F28-36A0-4A39-9371-9ADBC2823BDE} = {8845E834-77AF-4571-8CB2-346CE0DB1588}
+		{519EDA9F-EB0D-411F-A8D6-8D461903407E} = {8845E834-77AF-4571-8CB2-346CE0DB1588}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {16AD9C6E-1099-4EBB-BF8E-EE588DB55BB9}
+	EndGlobalSection
+EndGlobal
